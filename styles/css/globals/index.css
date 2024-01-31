@@ -1,0 +1,88 @@
+@import url("./_variables.scss");
+@keyframes burgerTop {
+  0% {
+    transform: rotate(18deg);
+    bottom: -1px;
+  }
+  20% {
+    transform: rotate(36deg);
+    bottom: -2px;
+  }
+  40% {
+    transform: rotate(54deg);
+    bottom: -3px;
+  }
+  60% {
+    transform: rotate(72deg);
+    bottom: -4px;
+  }
+  80% {
+    transform: rotate(90deg);
+    bottom: -5px;
+  }
+  100% {
+    transform: rotate(90deg);
+    bottom: -6px;
+  }
+}
+@keyframes burgerBottom {
+  0% {
+    transform: rotate(230deg);
+    width: 23px;
+  }
+  20% {
+    transform: rotate(220deg);
+    width: 28px;
+  }
+  40% {
+    transform: rotate(210deg);
+    width: 33px;
+  }
+  60% {
+    transform: rotate(200deg);
+    width: 38px;
+  }
+  80% {
+    transform: rotate(190deg);
+    width: 42px;
+  }
+  100% {
+    transform: rotate(180deg);
+    width: 45px;
+  }
+}
+html {
+  font-family: Montserrat;
+}
+
+h3 {
+  color: var(--text-color, #252b42);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, ul {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-text-color: #23a6f0;
+  --light-text-color: #fff;
+  --light-background-color: #fff;
+  --dark-background-color: #252b42;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --hover-text-color: #2a7cc7;
+  --image-background-color: #2d8bc0bf;
+  --hero-margin: 33px;
+}
+
+/*# sourceMappingURL=index.css.map */
