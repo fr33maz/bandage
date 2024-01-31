@@ -1,0 +1,18 @@
+html {
+    font-family: Montserrat;
+}
+h3 {
+    color: var(--text-color, #252b42);
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,a,li,ul {
+    margin: 0;
+    padding: 0;
+
+}

@@ -1,0 +1,37 @@
+@import url("./_variables.scss");;
+@mixin pre-title {
+    color: var(--hover-text-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+@mixin description {
+    color: var(--second-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+@mixin title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+}
+@mixin explore-button {
+    @include button-common;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 1px solid;
+    line-height: 22px;
+}
+@mixin learn-more-button {
+    @include button-common;
+    border-radius: 37px;
+    padding: 10px 20px;
+    line-height: 24px;
+}
+@mixin button-common {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+}
