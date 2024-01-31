@@ -144,36 +144,6 @@
     margin: auto;
     max-width: 1300px;
   }
-  .header .products {
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 90px;
-  }
-  .header .products.container {
-    max-width: 1150px;
-    width: 100%;
-  }
-  .header .products__container {
-    margin: 0;
-  }
-  .header .products__container-text {
-    max-width: 450px;
-    width: 100%;
-    margin: 0;
-  }
-  .header .products__title {
-    max-width: 450px;
-    width: 100%;
-  }
-  .header .bestsellers__title {
-    max-width: unset;
-  }
-  .header .bestsellers__description {
-    max-width: unset;
-  }
-  .header .bestsellers.container {
-    max-width: 1150px;
-  }
   .header__register, .header__login {
     color: var(--primary-text-color);
     font-size: 14px;
@@ -189,13 +159,40 @@
     margin-right: 5px;
     cursor: default;
   }
+  .bestsellers__title {
+    max-width: unset;
+  }
+  .bestsellers__description {
+    max-width: unset;
+    margin-bottom: 56px;
+  }
+  .bestsellers__pre-title {
+    display: block;
+    color: var(--second-text-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+  }
+  .bestsellers.container {
+    max-width: 1150px;
+  }
+  .bestsellers__container {
+    padding: 0;
+  }
   .mobile {
     display: none;
   }
   .hero {
+    max-width: 1300px;
+    height: 620px;
+    position: relative;
     padding: 0;
     display: flex;
-    justify-content: right;
+    justify-content: left;
+    padding-left: 206px;
+    text-align: left;
   }
   .hero__title {
     max-width: unset;
@@ -203,15 +200,115 @@
   .hero__container {
     align-self: center;
   }
+  .hero__description {
+    text-align: left;
+    margin-left: 0;
+  }
   .hero__background-image {
     width: 700px;
     height: 622px;
     background-image: url("../../img/hero-background-desktop.png");
     background-size: 100%;
-    position: static;
+    position: absolute;
+    left: 885px;
+    top: -3px;
+  }
+  .services__cards-container {
+    padding-top: 80px;
+  }
+  .posts__title {
+    padding-bottom: 96px;
+  }
+  .posts__card {
+    max-width: 510px;
+  }
+  .posts__card-container {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .posts__card-img-1 {
+    background: url("../../img/background-img-card.png"), lightgray 50%/cover no-repeat;
+  }
+  .posts__card-img-2 {
+    background: url("../../img/background-img-card-2.png"), lightgray 50%/cover no-repeat;
+  }
+  .posts__card-img-1, .posts__card-img-2 {
+    width: 209px;
+    height: 404px;
+  }
+  .posts__card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 37px;
+    border: 1px solid;
+    color: var(--primary-text-color);
+    width: 141px;
+  }
+  .posts__card-button::after {
+    content: url("../../img/svgs/learn-more-arrow.svg");
+    position: relative;
+    top: 4px;
+    left: 10px;
+  }
+  .posts__card:nth-of-type(3), .posts__card:nth-of-type(4) {
+    display: none;
+  }
+  .posts__card:nth-of-type(2), .posts__card:nth-of-type(1) {
+    display: flex;
+  }
+  .products {
+    flex-wrap: wrap;
+    justify-content: left;
+    justify-content: center;
+    padding: 80px 0 160px;
+  }
+  .products__image-1 {
+    width: 217px;
+    height: 498px;
+    background: url("../../img/product-image-1.png"), lightgray 50%/cover no-repeat;
+  }
+  .products__image-2 {
+    background: url("../../img/product-image-2.png"), lightgray 50%/cover no-repeat;
+    width: 280px;
+    height: 498px;
+  }
+  .products.container {
+    max-width: 1050px;
+    width: 100%;
+  }
+  .products__container-text {
+    max-width: 450px;
+    width: 100%;
+    margin: 0;
+  }
+  .products__title {
+    max-width: 450px;
+    width: 100%;
+  }
+  .socials .container {
+    align-items: center;
+    height: 140px;
+  }
+  .socials {
+    background-color: #fafafa;
+    align-items: center;
   }
   .socials__list {
     margin-right: 105px;
+  }
+  .socials ul {
+    margin: 0;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__madewithlove {
+    margin: auto;
+    max-width: 1150px;
+    text-align: left;
+    padding-top: 30px;
   }
 }
 
