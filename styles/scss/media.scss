@@ -247,7 +247,8 @@
     }
 
     .hero {
-        max-width: 1300px;
+        max-width: 1290px;
+        box-sizing: border-box;
         height: 620px;
         position: relative;
         padding: 0;
@@ -272,7 +273,7 @@
             background-image: url("../../img/hero-background-desktop.png");
             background-size: 100%;
             position: absolute;
-            left: 885px;
+            left: 670px;
             top: -3px;
         }
     }
