@@ -763,6 +763,10 @@ html {
     }
 }
 .footer {
+    .wrapper {
+        display: flex;
+        margin: auto;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -770,6 +774,7 @@ html {
         padding-bottom: 70px;
         gap: 30px;
         padding: 0 15px 0 25px;
+        justify-content: center;
     }
     &__madewithlove {
         color: var(--second-text-color);

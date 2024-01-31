@@ -1,4 +1,10 @@
 @media screen and (min-width: 768px) {
+    body {
+        padding: 0;
+    }
+    html {
+        padding: 0;
+    }
     .hero {
         &__background-image {
             background-image: url("../../img/hero-background-desktop.png");
@@ -66,7 +72,7 @@
         .container {
             flex-direction: row;
             justify-content: space-between;
-            max-width: 1150px;
+            max-width: 690px;
             width: 94%;
         }
     }
@@ -79,6 +85,10 @@
 }
 @media screen and (min-width: 1130px) {
     .header {
+        .checkbox:checked ~ .header__wrapper .header__navigation .header__list {
+            position:static;
+            display: flex;
+        }
         padding: 0;
         &__link {
             margin-left: 7px;
@@ -106,9 +116,11 @@
         &__wrapper {
             margin: auto;
             max-width: 1300px;
-            padding: 11px 0;
+            padding: .75rem;
         }
         &__container {
+            padding: 0 .75rem;
+
             background-color: var(--dark-background-color);
         }
 
@@ -134,7 +146,9 @@
             justify-content: space-between;
             display: flex;
             &-item {
-                &-shop {
+             
+                &:first-of-type {
+                    margin-left: 20px;
                 }
                 margin-bottom: 0;
                 display: block;
@@ -250,7 +264,7 @@
     .hero {
         max-width: 1290px;
         box-sizing: border-box;
-        height: 620px;
+        min-height: 620px;
         position: relative;
         padding: 0;
         display: flex;
@@ -306,7 +320,6 @@
                 &::before {
                     content: url("../../img/svgs/star.svg");
                     margin-right: 5px;
-
                 }
             }
             &-sale {
@@ -426,10 +439,11 @@
     .socials .container {
         align-items: center;
         height: 140px;
+        max-width: 1050px;
+
     }
     .socials {
         background-color: #fafafa;
-        align-items: center;
         &__list {
             margin-right: 105px;
         }
@@ -438,6 +452,9 @@
         }
     }
     .footer {
+        &__subscribe-container-title {
+            margin-bottom: 20px;
+        }
         padding: 50px 0;
         &__madewithlove {
             margin: auto;
