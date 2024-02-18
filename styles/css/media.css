@@ -1,4 +1,10 @@
 @media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+  html {
+    padding: 0;
+  }
   .hero__background-image {
     background-image: url("../../img/hero-background-desktop.png");
     background-size: 100%;
@@ -47,7 +53,7 @@
   .socials .container {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1150px;
+    max-width: 690px;
     width: 94%;
   }
   .footer {
@@ -60,6 +66,10 @@
 @media screen and (min-width: 1130px) {
   .header {
     padding: 0;
+  }
+  .header .checkbox:checked ~ .header__wrapper .header__navigation .header__list {
+    position: static;
+    display: flex;
   }
   .header__link {
     margin-left: 7px;
@@ -77,9 +87,10 @@
   .header__wrapper {
     margin: auto;
     max-width: 1300px;
-    padding: 11px 0;
+    padding: 0.75rem;
   }
   .header__container {
+    padding: 0 0.75rem;
     background-color: var(--dark-background-color);
   }
   .header__login-wrapper {
@@ -111,6 +122,9 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.2px;
+  }
+  .header__list-item:first-of-type {
+    margin-left: 20px;
   }
   .header__list-item a {
     font-size: 14px;
@@ -208,7 +222,7 @@
   .hero {
     max-width: 1290px;
     box-sizing: border-box;
-    height: 620px;
+    min-height: 620px;
     position: relative;
     padding: 0;
     display: flex;
@@ -364,10 +378,10 @@
   .socials .container {
     align-items: center;
     height: 140px;
+    max-width: 1050px;
   }
   .socials {
     background-color: #fafafa;
-    align-items: center;
   }
   .socials__list {
     margin-right: 105px;
@@ -377,6 +391,9 @@
   }
   .footer {
     padding: 50px 0;
+  }
+  .footer__subscribe-container-title {
+    margin-bottom: 20px;
   }
   .footer__madewithlove {
     margin: auto;
